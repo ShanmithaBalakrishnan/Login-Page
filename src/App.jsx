@@ -1,11 +1,15 @@
-import React from 'react';
-import { useState } from "react";
 import "./App.css";
-import { Login } from '@mui/icons-material';
+import { Paper } from "@mui/material";
+import Login from "./Login";
+
 
 function App() {
   return (
-    <Login/>
+    <Paper elevation={4} style= {{minHeight: "100vh" , borderRadius: "0px"}}>
+      <div className="App">
+          {/* <Login/> */}
+      </div>
+      </Paper>
   );
 }
 
