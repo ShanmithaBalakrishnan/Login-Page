@@ -1,15 +1,18 @@
-import "./App.css";
 import { Paper } from "@mui/material";
+import "./App.css";
 import Login from "./Login";
-
 
 function App() {
   return (
-    <Paper elevation={4} style= {{minHeight: "100vh" , borderRadius: "0px"}}>
-      <div className="App">
-          {/* <Login/> */}
-      </div>
-      </Paper>
+    <Paper
+      elevation={0}
+      style={{
+        Height: "90%",
+        borderRadius: "0%"
+      }}
+    >
+      <Login />
+    </Paper>
   );
 }
 
