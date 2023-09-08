@@ -27,34 +27,53 @@ const Login = () => {
           <img src={HeroImage} alt="HeroImage" className="Hero" />
         </div>
 
-        <Box className="Form">
-          <p>Sign in to your account</p>
-          <h5>Email</h5>
-          <TextField
-            id="outlined-basic"
-            label="Admin@gmail.com"
-            variant="outlined"
-          />
-          <h5>Password</h5>
-          <TextField
-            id="outlined-basic"
-            label="Enter Your Password"
-            variant="outlined"
-          />
-          <h6>Remember me</h6>
+        <div className="Box">
+          <Box className="Box1">
+            <p>Sign in to your account</p>
+            <div style={{ textAlign: "center", width: "420px" }}>
+              <h5 style={{ textAlign: "left", width: "60px" }}>Email</h5>
+              <TextField
+                id="outlined-basic"
+                label="Admin@gmail.com"
+                variant="outlined"
+                className="email"
+              />
+            </div>
 
-          <Checkbox {...label} />
+            <div style={{ textAlign: "center", width: "420px" }}>
+              <h5 style={{ textAlign: "left", width: "60px" }}>Password</h5>
+              <TextField
+                id="outlined-basic"
+                label="Enter Your Password"
+                variant="outlined"
+                className="password"
+              />
+            </div>
 
-          <h6>Forgot Password?</h6>
+            <div style={{ textAlign: "right" }} className="alignment">
+              <h6>
+                Remember me <Checkbox {...label} />
+              </h6>
+              <h6>Forgot Password?</h6>
+            </div>
 
-          <div className="button">
-            <Button variant="contained">Login as Admin</Button>
-            <Button variant="contained">Login as Team Manager</Button>
-            <Button variant="contained">Login in as Developer</Button>
-            <Button variant="contained">Login as Client</Button>
-          </div>
-        </Box>
-        <h5>Copyright @2023KarmaDev.in.</h5>
+            <div>
+              <div className="login-btn">
+                <Button variant="container">Login as Admin</Button>
+              </div>
+              <div className="login-btn">
+                <Button variant="container">Login as Team Manager</Button>
+              </div>
+              <div className="login-btn">
+                <Button variant="container">Login in as Developer</Button>
+              </div>
+              <div className="login-btn">
+                <Button variant="container">Login as Client</Button>
+              </div>
+            </div>
+          </Box>
+          <h3 className="copyright">Copyright @2023KarmaDev.in.</h3>
+        </div>
       </Box>
     </div>
   );

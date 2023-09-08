@@ -10,7 +10,7 @@ function App() {
         Height: "90%",
         borderRadius: "0%"
       }}
-    >
+    className="Paper">
       <Login />
     </Paper>
   );

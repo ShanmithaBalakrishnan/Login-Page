@@ -35,20 +35,25 @@
   opacity: 0.800000011920929px;
 }
 
-.Form {
+.Box {
   background-color: #ffffff;
   width: 500px;
   height: 650px;
-  top: 1090px;
   border-radius: 15px;
   padding: 20px;
   line-height: 1px;
 }
 
-.Form p {
+/* .Box1{
+  width: 700px;
+} */
+
+.Box1 p {
+  display: flex;
   width: 100%;
   height: 30px;
   align-items: center;
+  justify-content: center;
   font-family: Roboto;
   font-size: 25px;
   font-weight: 600;
@@ -56,9 +61,56 @@
   letter-spacing: 0em;
 }
 
-.button {
-  color: #EC3D50;
+.email {
+  width: 400px;
+}
+
+.password {
+  width: 400px;
+}
+
+.login-btn {
   display: flex;
-  justify-content: space-evenly;
+  margin: 10px;
+  align-items: center;
+  line-height: 20px;
+  background: #ec3d50;
+  color: white;
+  justify-content: center;
   border-radius: 10px;
+  width: 419px;
+  height: 50px;
+}
+
+.login-btn .p {
+  display: flex;
+  align-items: center;
+}
+
+.Login-desp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox {
+  display: block;
+}
+
+.alignment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  text-align: "right";
+}
+
+.copyright {
+  margin-bottom: 0;
+  text-align: center;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0.085em;
+  color: #18172580;
 }
